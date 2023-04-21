@@ -1,0 +1,84 @@
+[gd_scene load_steps=7 format=3 uid="uid://csfhnxtd8v808"]
+
+[ext_resource type="Script" path="res://Game/Menus/end_screen.gd" id="1_sdx4s"]
+[ext_resource type="Texture2D" uid="uid://bnpyd3q1bkm50" path="res://Assets/UI/RestartButton.png" id="2_45gsw"]
+[ext_resource type="Texture2D" uid="uid://b887h853fh24h" path="res://Assets/UI/EX64.png" id="2_41273"]
+[ext_resource type="Texture2D" uid="uid://d2b0fximtq1a6" path="res://Assets/UI/ScoreBlack.png" id="3_0ok0j"]
+[ext_resource type="Texture2D" uid="uid://jaf6cndbt1ed" path="res://Assets/UI/QuitButton.png" id="3_hj4dh"]
+[ext_resource type="AudioStream" uid="uid://b7wk0xni714xi" path="res://Assets/Audio/mixkit-arcade-game-explosion-2759.wav" id="6_n4fl6"]
+
+[node name="EndScreen" type="Node"]
+script = ExtResource("1_sdx4s")
+
+[node name="HowToMenu" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="HowToMenu"]
+layout_mode = 2
+color = Color(0.509804, 0.145098, 0.145098, 1)
+
+[node name="Panel" type="Panel" parent="HowToMenu"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="Sprite2D2" type="Sprite2D" parent="HowToMenu/Panel"]
+position = Vector2(474, 212.184)
+scale = Vector2(7, 7)
+texture = ExtResource("2_41273")
+
+[node name="Sprite2D" type="Sprite2D" parent="HowToMenu/Panel"]
+position = Vector2(524, 101.402)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_0ok0j")
+
+[node name="EndscoreLabel" type="Label" parent="HowToMenu/Panel"]
+layout_mode = 0
+offset_left = 301.465
+offset_top = 197.0
+offset_right = 627.465
+offset_bottom = 269.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "score"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RestartButton" type="Button" parent="HowToMenu/Panel"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+offset_left = 396.0
+offset_top = 417.641
+offset_right = 562.622
+offset_bottom = 467.641
+theme_override_font_sizes/font_size = 30
+text = "Back"
+
+[node name="Sprite2D" type="Sprite2D" parent="HowToMenu/Panel/RestartButton"]
+position = Vector2(101, 60)
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("2_45gsw")
+
+[node name="QuitButton" type="Button" parent="HowToMenu/Panel"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+offset_left = 421.0
+offset_top = 477.64
+offset_right = 548.0
+offset_bottom = 527.64
+theme_override_font_sizes/font_size = 30
+text = "Back"
+
+[node name="Sprite2D" type="Sprite2D" parent="HowToMenu/Panel/QuitButton"]
+position = Vector2(99, 60)
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("3_hj4dh")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_n4fl6")
+
+[connection signal="pressed" from="HowToMenu/Panel/RestartButton" to="." method="_on_restart_button_pressed"]
+[connection signal="pressed" from="HowToMenu/Panel/QuitButton" to="." method="_on_quit_button_pressed"]

@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://ct7vy0gkd0kkg"]
+
+[ext_resource type="PackedScene" uid="uid://csyn8wu25t2cg" path="res://Assets/THando/Barrel.glb" id="1_6gr2c"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_35ujf"]
+size = Vector3(2.66041, 2.57926, 2.63005)
+
+[node name="Barrel" groups=["Obstacle"] instance=ExtResource("1_6gr2c")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.499649, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="2"]
+transform = Transform3D(-3.3906e-08, 0, 0.775679, 0, 0.775679, 0, -0.775679, 0, -3.3906e-08, -0.0243222, 0.109626, -0.00915813)
+shape = SubResource("BoxShape3D_35ujf")

@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3rmfojx8jb35"]
+
+[ext_resource type="PackedScene" uid="uid://bkm0m4ffwioqh" path="res://Assets/Phil/Ambulance Truck.glb" id="1_3187e"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f4jpx"]
+size = Vector3(3.66323, 3.00739, 6.98812)
+
+[node name="Ambulance Truck" groups=["Obstacle"] instance=ExtResource("1_3187e")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="8" groups=["Obstacle"]]
+transform = Transform3D(0.775679, 0, 0, 0, 0.775679, 0, 0, 0, 0.775679, 0.0128818, 1.7157, -1.78661)
+shape = SubResource("BoxShape3D_f4jpx")

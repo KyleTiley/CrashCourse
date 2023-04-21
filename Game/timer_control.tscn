@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://doo4c34ti5c4x"]
+
+[ext_resource type="Script" path="res://Game/TimerControl.gd" id="1_ltbl0"]
+[ext_resource type="Script" path="res://Game/TimerLabel.gd" id="2_cqx4v"]
+[ext_resource type="Texture2D" uid="uid://bt45dy50p0wg0" path="res://Assets/UI/ScoreWhite.png" id="2_u313i"]
+
+[node name="TimerControl" type="Node2D"]
+script = ExtResource("1_ltbl0")
+
+[node name="Label2" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 50
+
+[node name="Sprite2D" type="Sprite2D" parent="Label2"]
+position = Vector2(133, 82)
+scale = Vector2(0.14, 0.14)
+texture = ExtResource("2_u313i")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 177.0
+offset_top = 5.0
+offset_right = 348.0
+offset_bottom = 77.0
+theme_override_font_sizes/font_size = 50
+text = "0"
+script = ExtResource("2_cqx4v")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

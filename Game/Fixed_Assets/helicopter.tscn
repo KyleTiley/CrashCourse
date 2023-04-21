@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6576lwtxr56n"]
+
+[ext_resource type="PackedScene" uid="uid://b3cds35auyo5" path="res://Assets/Phil/Helicopter.glb" id="1_awtd5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lsc2a"]
+size = Vector3(1.35222, 1.16289, 5.43439)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vtsoi"]
+size = Vector3(1.89096, 2.35038, 3.35644)
+
+[node name="Helicopter" groups=["Obstacle"] instance=ExtResource("1_awtd5")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="7" groups=["Obstacle"]]
+transform = Transform3D(0.775679, 0, 0, 0, 0.775679, 0, 0, 0, 0.775679, -0.00219814, 2.30171, -4.30991)
+shape = SubResource("BoxShape3D_lsc2a")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.37986, -0.553933)
+shape = SubResource("BoxShape3D_vtsoi")

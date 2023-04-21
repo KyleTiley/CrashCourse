@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cuke7mp0rtiqw"]
+
+[ext_resource type="AudioStream" uid="uid://dq8yg7ns4p2ii" path="res://Assets/Audio/crashdrivers in game music.wav" id="1_3iacl"]
+
+[node name="Global" type="Node"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_3iacl")
+autoplay = true

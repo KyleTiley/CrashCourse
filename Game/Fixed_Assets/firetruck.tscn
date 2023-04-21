@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxj7tnwe1w3v"]
+
+[ext_resource type="PackedScene" uid="uid://cb4jd8myleeuj" path="res://Assets/Phil/Firetruck.glb" id="1_6hrmc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p7nt0"]
+size = Vector3(3.66323, 3.80821, 11.013)
+
+[node name="Firetruck" groups=["Obstacle"] instance=ExtResource("1_6hrmc")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="10" groups=["Obstacle"]]
+transform = Transform3D(0.775679, 0, 0, 0, 0.775679, 0, 0, 0, 0.775679, 0.0128818, 1.7157, -2.76348)
+shape = SubResource("BoxShape3D_p7nt0")

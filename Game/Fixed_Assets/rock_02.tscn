@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtaf3fvftn3"]
+
+[ext_resource type="PackedScene" uid="uid://bqjcuumw11jx" path="res://Assets/Willem/Rock02.glb" id="1_tdqwm"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_ocw3t"]
+radius = 3.0
+
+[node name="Rock02" groups=["Obstacle"] instance=ExtResource("1_tdqwm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.35437, 0)
+
+[node name="Rock022" parent="." index="0"]
+transform = Transform3D(-0.358234, 2.32593, -0.00341837, -2.29091, -0.353438, -0.406336, -0.402114, -0.0585259, 2.31801, -0.0353565, -0.47788, -0.00522327)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" groups=["Obstacle"]]
+transform = Transform3D(0.775679, 0, 0, 0, 0.775679, 0, 0, 0, 0.775679, -0.025344, -0.444733, 0.0318901)
+shape = SubResource("SphereShape3D_ocw3t")

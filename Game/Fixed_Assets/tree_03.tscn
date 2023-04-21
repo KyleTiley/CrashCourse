@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://1t5yahkrriwu"]
+
+[ext_resource type="PackedScene" uid="uid://cd0euedej5lsw" path="res://Assets/Willem/Tree03.glb" id="1_21dvl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g6rfg"]
+size = Vector3(1.96241, 18.8834, 2.23263)
+
+[node name="Tree03" groups=["Obstacle"] instance=ExtResource("1_21dvl")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+transform = Transform3D(0.775679, 0, 0, 0, 0.775679, 0, 0, 0, 0.775679, 0.00788489, 7.26281, 0.0569258)
+shape = SubResource("BoxShape3D_g6rfg")

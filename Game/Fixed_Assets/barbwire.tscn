@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dr3rda7n24l40"]
+
+[ext_resource type="PackedScene" uid="uid://qb2a5pmmx1ar" path="res://Assets/THando/Barbwire.glb" id="1_ctfhq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_35ujf"]
+size = Vector3(2.66041, 2.57926, 2.63005)
+
+[node name="Barbwire" groups=["Obstacle"] instance=ExtResource("1_ctfhq")]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="2"]
+transform = Transform3D(-3.3906e-08, 0, 0.775679, 0, 0.775679, 0, -0.775679, 0, -3.3906e-08, -0.0162626, 0.986125, -0.160473)
+shape = SubResource("BoxShape3D_35ujf")

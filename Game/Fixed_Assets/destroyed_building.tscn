@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cr0xbxxaqknig"]
+
+[ext_resource type="PackedScene" uid="uid://fsnmeak5jq3n" path="res://Assets/THando/DestroyedBuilding.glb" id="1_es2eq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ah0ea"]
+size = Vector3(7.69524, 9.08384, 7.60849)
+
+[node name="DestroyedBuilding" groups=["Obstacle"] instance=ExtResource("1_es2eq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.062, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="2" groups=["Obstacle"]]
+transform = Transform3D(0.775679, 0, 0, 0, 0.775679, 0, 0, 0, 0.775679, 0.105486, 4.47435, 0.0155225)
+shape = SubResource("BoxShape3D_ah0ea")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6odxcp0n7mrg"]
+
+[ext_resource type="PackedScene" uid="uid://jmaggytabb4c" path="res://Assets/Willem/Grass.glb" id="1_n4mpk"]
+
+[node name="Grass" instance=ExtResource("1_n4mpk")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)

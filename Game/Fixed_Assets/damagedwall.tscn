@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://021x4ici42ds"]
+
+[ext_resource type="PackedScene" uid="uid://b66eby2ljubff" path="res://Assets/THando/damagedwall.glb" id="1_g7xpx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ha0t1"]
+size = Vector3(10.5365, 10.1481, 1.4768)
+
+[node name="damagedwall" groups=["Obstacle"] instance=ExtResource("1_g7xpx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.04525, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+transform = Transform3D(0.775679, 0, 0, 0, 0.775679, 0, 0, 0, 0.775679, -3.01662, 2.5326, 0.604694)
+shape = SubResource("BoxShape3D_ha0t1")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="2"]
+transform = Transform3D(-3.3906e-08, 0, 0.775679, 0, 0.775679, 0, -0.775679, 0, -3.3906e-08, 0.494065, 2.5326, -4.04745)
+shape = SubResource("BoxShape3D_ha0t1")

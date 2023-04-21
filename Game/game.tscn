@@ -1,0 +1,70 @@
+[gd_scene load_steps=10 format=3 uid="uid://dbfarw7hekvff"]
+
+[ext_resource type="PackedScene" uid="uid://bfslnkfo64ob0" path="res://Game/Vehicles/Player/player.tscn" id="1_xny5b"]
+[ext_resource type="Script" path="res://Game/game.gd" id="1_yumem"]
+[ext_resource type="Script" path="res://Game/PlayerCamera.gd" id="2_6qsel"]
+[ext_resource type="PackedScene" uid="uid://doo4c34ti5c4x" path="res://Game/timer_control.tscn" id="5_vuxwr"]
+[ext_resource type="PackedScene" uid="uid://bftbpmwk4ullf" path="res://Game/Vehicles/NPCs/tank.tscn" id="7_3vcig"]
+[ext_resource type="PackedScene" uid="uid://bpfcjri04pc6i" path="res://Game/world.tscn" id="7_ondot"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_y1p1f"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_xlcs7"]
+sky_material = SubResource("ProceduralSkyMaterial_y1p1f")
+
+[sub_resource type="Environment" id="Environment_6c6sv"]
+background_mode = 2
+sky = SubResource("Sky_xlcs7")
+tonemap_mode = 2
+
+[node name="Game" type="Node"]
+script = ExtResource("1_yumem")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_6c6sv")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 15.9441, 23.6554)
+script = ExtResource("2_6qsel")
+target_path = NodePath("../Player")
+offset = Vector3(0, 20, -20)
+
+[node name="Player" parent="." instance=ExtResource("1_xny5b")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.893123, 0)
+
+[node name="TimerControl" parent="." instance=ExtResource("5_vuxwr")]
+
+[node name="World" parent="." instance=ExtResource("7_ondot")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, -0.0736017)
+
+[node name="Tanks" type="Node3D" parent="."]
+
+[node name="tank" parent="Tanks" instance=ExtResource("7_3vcig")]
+transform = Transform3D(0.000558527, 0, -2, 0, 2, 0, 2, 0, 0.000558527, 203.38, 33.5194, 33.2964)
+
+[node name="tank7" parent="Tanks" instance=ExtResource("7_3vcig")]
+transform = Transform3D(0.000558527, 0, -2, 0, 2, 0, 2, 0, 0.000558527, 166.647, 33.5194, -113.488)
+
+[node name="tank2" parent="Tanks" instance=ExtResource("7_3vcig")]
+transform = Transform3D(-2, 0, 3.01992e-07, 0, 2, 0, -3.01992e-07, 0, -2, -40.7711, 33.5194, 206.583)
+
+[node name="tank5" parent="Tanks" instance=ExtResource("7_3vcig")]
+transform = Transform3D(-2, 0, 3.01992e-07, 0, 2, 0, -3.01992e-07, 0, -2, 115.753, 33.5194, 174.368)
+
+[node name="tank3" parent="Tanks" instance=ExtResource("7_3vcig")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, -202.174, 33.5194, -51.2234)
+
+[node name="tank8" parent="Tanks" instance=ExtResource("7_3vcig")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, -167.91, 33.5194, 123.213)
+
+[node name="tank4" parent="Tanks" instance=ExtResource("7_3vcig")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 33.0694, 33.5194, -206.244)
+
+[node name="tank6" parent="Tanks" instance=ExtResource("7_3vcig")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -123.834, 33.5194, -164.933)

@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cydiq4c508fho"]
+
+[ext_resource type="PackedScene" uid="uid://cmrom1nwp8op3" path="res://Assets/THando/GameCrate.glb" id="1_5wvsc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_35ujf"]
+size = Vector3(2.66041, 2.57926, 2.63005)
+
+[node name="GameCrate" groups=["Obstacle"] instance=ExtResource("1_5wvsc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00992, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="2"]
+transform = Transform3D(-3.3906e-08, 0, 0.775679, 0, 0.775679, 0, -0.775679, 0, -3.3906e-08, -0.0116399, -0.0179089, 0.00493836)
+shape = SubResource("BoxShape3D_35ujf")

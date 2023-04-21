@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://52nk7f7hl3og"]
+
+[ext_resource type="PackedScene" uid="uid://dasqr0wlt4fnd" path="res://Assets/Phil/Tent.glb" id="1_pdrcl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fvmnw"]
+size = Vector3(7.17465, 3.97852, 10.0105)
+
+[node name="Tent" groups=["Obstacle"] instance=ExtResource("1_pdrcl")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2.79493, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="3"]
+transform = Transform3D(-3.3906e-08, 0, 0.775679, 0, 0.775679, 0, -0.775679, 0, -3.3906e-08, 0.589002, 4.33641, -1.38517)
+shape = SubResource("BoxShape3D_fvmnw")

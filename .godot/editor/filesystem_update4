@@ -2,3 +2,4 @@ res://Game/Menus/menus.tscn
 res://Game/game.tscn
 res://Game/world.tscn
 res://Game/global.tscn
+res://Game/Vehicles/vehicle_base.gd

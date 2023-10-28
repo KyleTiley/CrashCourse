@@ -1,5 +1,5 @@
-2a60927148abd1d33b818b535e306557
-::res://::1689692311
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1698493410
 GlobalScript.gd::GDScript::-1::1682108942::0::1::::<>Node<>::
 icon.svg::CompressedTexture2D::1738660376676923149::1682108942::1685988713::1::::<><>::
 ::res://Assets/::1685988713
@@ -55,16 +55,16 @@ Rock02.glb::PackedScene::103769994164464737::1682108942::1685988715::1::::<><>::
 Rock03.glb::PackedScene::4008206052657287246::1682108942::1685988715::1::::<><>::
 Tree02.glb::PackedScene::1921409299786550452::1682108942::1685988715::1::::<><>::
 Tree03.glb::PackedScene::5035296140923732454::1682108942::1685988715::1::::<><>::
-::res://Game/::1685988758
+::res://Game/::1698493406
 game.gd::GDScript::-1::1682108942::0::1::::<>Node<>::
-game.tscn::PackedScene::7239804347255272947::1685988758::0::1::::<><>::uid://bfslnkfo64ob0<>res://Game/game.gd<>res://Game/PlayerCamera.gd<>uid://doo4c34ti5c4x<>uid://bftbpmwk4ullf<>uid://bpfcjri04pc6i
-global.tscn::PackedScene::6197562685675097950::1682108942::0::1::::<><>::uid://dq8yg7ns4p2ii
+game.tscn::PackedScene::7239804347255272947::1698493406::0::1::::<><>::uid://bfslnkfo64ob0::::res://Game/Vehicles/Player/player.tscn<>res://Game/game.gd<>res://Game/PlayerCamera.gd<>uid://doo4c34ti5c4x::::res://Game/timer_control.tscn<>uid://bftbpmwk4ullf::::res://Game/Vehicles/NPCs/tank.tscn<>uid://bpfcjri04pc6i::::res://Game/world.tscn
+global.tscn::PackedScene::6197562685675097950::1698493406::0::1::::<><>::uid://dq8yg7ns4p2ii::::res://Assets/Audio/crashdrivers in game music.wav
 humvee.glb::PackedScene::3485967196807026934::1682108942::1685988715::1::::<><>::
 PlayerCamera.gd::GDScript::-1::1682108942::0::1::::<>Camera3D<>::
 TimerControl.gd::GDScript::-1::1682108942::0::1::::<>Node2D<>::
 TimerLabel.gd::GDScript::-1::1682108942::0::1::::<>Label<>::
 timer_control.tscn::PackedScene::8172573031274908937::1682108942::0::1::::<><>::res://Game/TimerControl.gd<>res://Game/TimerLabel.gd<>uid://bt45dy50p0wg0
-world.tscn::PackedScene::3449713639595182742::1682108942::0::1::::<><>::uid://cr0xbxxaqknig<>uid://1t5yahkrriwu<>uid://dtaf3fvftn3<>uid://bvqsh7wrdbnr8<>uid://021x4ici42ds<>uid://c6576lwtxr56n<>uid://ccbxkabmt4eo2<>uid://0bod47frg3ru<>uid://wwvwpnysodvc<>uid://d10wb1sfmiuqj<>uid://cxj7tnwe1w3v<>uid://d3rmfojx8jb35<>uid://ct7vy0gkd0kkg<>uid://dr3rda7n24l40<>uid://52nk7f7hl3og<>uid://cydiq4c508fho
+world.tscn::PackedScene::3449713639595182742::1698493406::0::1::::<><>::uid://cr0xbxxaqknig::::res://Game/Fixed_Assets/destroyed_building.tscn<>uid://1t5yahkrriwu::::res://Game/Fixed_Assets/tree_03.tscn<>uid://dtaf3fvftn3::::res://Game/Fixed_Assets/rock_02.tscn<>uid://bvqsh7wrdbnr8::::res://Game/Fixed_Assets/city_floor.tscn<>uid://021x4ici42ds::::res://Game/Fixed_Assets/damagedwall.tscn<>uid://c6576lwtxr56n::::res://Game/Fixed_Assets/helicopter.tscn<>uid://ccbxkabmt4eo2::::res://Game/Fixed_Assets/shop.tscn<>uid://0bod47frg3ru::::res://Assets/Phil/Roads.3.glb<>uid://wwvwpnysodvc::::res://Game/Fixed_Assets/Scraper.tscn<>uid://d10wb1sfmiuqj::::res://Game/Fixed_Assets/disk.tscn<>uid://cxj7tnwe1w3v::::res://Game/Fixed_Assets/firetruck.tscn<>uid://d3rmfojx8jb35::::res://Game/Fixed_Assets/ambulance_truck.tscn<>uid://ct7vy0gkd0kkg::::res://Game/Fixed_Assets/barrel.tscn<>uid://dr3rda7n24l40::::res://Game/Fixed_Assets/barbwire.tscn<>uid://52nk7f7hl3og::::res://Game/Fixed_Assets/tent.tscn<>uid://cydiq4c508fho::::res://Game/Fixed_Assets/game_crate.tscn
 ::res://Game/Fixed_Assets/::1682108942
 ambulance_truck.tscn::PackedScene::9160382377965559634::1682108942::0::1::::<><>::uid://bkm0m4ffwioqh
 barbwire.tscn::PackedScene::8411312566359908439::1682108942::0::1::::<><>::uid://qb2a5pmmx1ar
@@ -89,13 +89,13 @@ tree_03.tscn::PackedScene::1865997492044070200::1682108942::0::1::::<><>::uid://
 ::res://Game/Level/::1682108942
 ::res://Game/Level/Floor/::1682108942
 floor.tscn::PackedScene::2785307749423749938::1682108942::0::1::::<><>::
-::res://Game/Menus/::1685988758
+::res://Game/Menus/::1698493406
 end_screen.gd::GDScript::-1::1682108942::0::1::::<>Node<>::
 end_screen.tscn::PackedScene::6047011913480819791::1682108942::0::1::::<><>::res://Game/Menus/end_screen.gd<>uid://bnpyd3q1bkm50<>uid://b887h853fh24h<>uid://d2b0fximtq1a6<>uid://jaf6cndbt1ed<>uid://b7wk0xni714xi
 menus.gd::GDScript::-1::1682108942::0::1::::<>Control<>::
-menus.tscn::PackedScene::8102899737614610038::1685988758::0::1::::<><>::res://Game/Menus/menus.gd<>uid://b887h853fh24h<>uid://ef60448w3ana<>uid://dukrkybk7je7a<>uid://bu8wt2dulijbc<>uid://bw7xs1hw5ej2l<>uid://c67u7wi23f5xl<>uid://q5c5im4ieryo<>uid://c3f3fq7epsbks
-::res://Game/Vehicles/::1682108942
-vehicle_base.gd::GDScript::-1::1682108942::0::1::::<>CharacterBody3D<>::
+menus.tscn::PackedScene::8102899737614610038::1698493406::0::1::::<><>::res://Game/Menus/menus.gd<>uid://b887h853fh24h::::res://Assets/UI/EX64.png<>uid://ef60448w3ana::::res://Assets/UI/PlayButton.png<>uid://dukrkybk7je7a::::res://Assets/UI/SettingsButton.png<>uid://bu8wt2dulijbc::::res://Assets/UI/HowToButton.png<>uid://bw7xs1hw5ej2l::::res://Assets/UI/CrashCourse.png<>uid://c67u7wi23f5xl::::res://Assets/UI/BackButton.png<>uid://q5c5im4ieryo::::res://Assets/UI/Volume.png<>uid://c3f3fq7epsbks::::res://Assets/HowTo.png
+::res://Game/Vehicles/::1698493296
+vehicle_base.gd::GDScript::-1::1698493296::0::1::::<>CharacterBody3D<>::
 ::res://Game/Vehicles/NPCs/::1682108942
 NPC_car.gd::GDScript::-1::1682108942::0::1::::<>CharacterBody3D<>::
 npc_car.tscn::PackedScene::8102103388925490113::1682108942::0::1::::<><>::uid://b56i4ptcci7qf<>res://Game/Vehicles/NPCs/NPC_car.gd
